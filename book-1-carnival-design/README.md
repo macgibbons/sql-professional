@@ -9,28 +9,16 @@ Carnival was able to get by as a bootstrapped startup using Google Sheet and CSV
 | 🍎 | [Installations for Mac](./chapters/GETTING_STARTED_MAC.md) |
 | 💻 | [Installations for Windows](./chapters/GETTING_STARTED_WINDOWS.md) |
 | 1 | [Introduction to Databases](./chapters/DATABASE_INTRODUCTION.md) |
-| 1 | [Getting the Data](./chapters/EXPLORE_CSV.md) |
-| 2 | [Data Relationships &amp; Normalization](./chapters/NORMALIZATION.md) |
-| 3 | [Exploring the Data](./chapters/EXPLORE_CSV.md) |
-| 4 | [Entity Relationship Diagram](./chapters/ERD.md) |
-| 👨‍👨‍👦‍👦 | **_Group Project: Carnival Design_** |
+| 2 | [Getting the Data](./chapters/EXPLORE_CSV.md) |
+| 3 | [Data Relationships &amp; Normalization](./chapters/NORMALIZATION.md) |
+| 4 | [Exploring the Data](./chapters/EXPLORE_CSV.md) |
+| 5 | [Entity Relationship Diagram](./chapters/ERD.md) |
+| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Design_** |
 | 👩🏾‍🎓 | **_Self-Assessment: The League Design_** |
-| 5 | [Creating Tables &amp; Relationship Constraints](./chapters/CREATE_TABLES_COLUMNS.md) |
-| 4 | [Mutable and Immutable Data](./chapters/DEPARTMENTS.md) |
-| 4 | [Inserting Related Data](./chapters/DEPARTMENTS.md) |
-| 👨‍👨‍👦‍👦 | **_Group Project: Carnival Creation_** |
+| 6 | [Composite Keys](./chapters/CREATE_TABLES_COLUMNS.md) |
+| 7 | [Carnvial ERD Revisited](./chapters/ERD_COMPOSITE_KEYS.md) |
+| 8 | [Creating Tables &amp; Relationship Constraints](./chapters/CREATE_TABLES_COLUMNS.md) |
+| 9 | [Mutable and Immutable Data](./chapters/MUTABILITY.md) |
+| 10 | [Inserting Related Data](./chapters/INSERTS.md) |
+| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Creation_** |
 | 👩🏾‍🎓 | **_Self-Assessment: The League Data_** |
-| 5 | [Basic Query Review](./chapters/LOCATIONS.md) |
-| 5 | [Joining Data](./chapters/LOCATIONS.md) |
-| 6 | [Filtering Data](./chapters/MANY_MANY.md) |
-| 7 | [Complex Joins](./chapters/CUSTOMERS.md) |
-| 8 | [Subqueries](./chapters/CUSTOMER_REPORT.md) |
-| 9 | [Common Table Expressions [CTE]](./chapters/POLITICIANS.md) |
-| 12 | [Carnival Sales](./chapters/PAC_DONATIONS.md) |
-| 12 | [Carnival Inventory Turnover](./chapters/PAC_DONATIONS.md) |
-| 12 | [Carnival Employee Recognition](./chapters/PAC_DONATIONS.md) |
-| 12 | [Carnival Dealership Reports](./chapters/PAC_DONATIONS.md) |
-| 12 | [Carnival Leasing](./chapters/PAC_DONATIONS.md) |
-| 12 | [Carnival Customer Loyalty](./chapters/PAC_DONATIONS.md) |
-| 👨‍👨‍👦‍👦 | **_Group Project: Carnival Web Reports_** |
-| 👩🏾‍🎓 | **_Self-Assessment: The League Reports_** |
