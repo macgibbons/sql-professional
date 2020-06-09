@@ -10,19 +10,18 @@ Carnival now has hired some top-noth business analysts and product managers. Bei
 | 2 | [Joining Data](./chapters/JOIN_OVERVIEW.md) |
 | 3 | [Filtering Data](./chapters/WHERE_CLAUSES.md) |
 | 4 | [Complex Joins](./chapters/COMPLEX_QUERIES.md) |
+| 4 | [Aggregation and Grouping](./chapters/AGGREGATION.md) |
 | 5 | [Subqueries](./chapters/SUBQUERY.md) |
-| 6 | [Common Table Expressions [CTE]](./chapters/CTE.md) |
+| 6 | [Common Table Expressions \[CTE\]](./chapters/CTE.md) |
 | 7 | [Carnival Sales](./chapters/SALES.md) |
 | 8 | [Carnival Inventory Turnover](./chapters/INVENTORY.md) |
 | 9 | [Carnival Employee Recognition](./chapters/EMPLOYEES.md) |
 | 10 | [Carnival Dealership Reports](./chapters/DEALERSHIPS.md) |
 | 11 | [Carnival Leasing](./chapters/LEASING.md) |
 | 12 | [Carnival Customer Loyalty](./chapters/CUSTOMERS.md) |
-| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Web Reports_** |
-| 👩🏾‍🎓 | **_Self-Assessment: The League Reports_** |
 | 13 | [Virtual Tables with Views](./chapters/VIEWS.md) |
 | 14 | [Views with CTEs](./chapters/CTE_VIEWS.md) |
 | 15 | [Dealership Sales View](./chapters/DEALER_VIEW.md) |
 | 16 | [Salesperson Sales View](./chapters/SALESPERSON_VIEW.md) |
-| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Report Views_** |
-| 👩🏾‍🎓 | **_Self-Assessment: The League Views_** |
+| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Web Reports_** |
+| 👩🏾‍🎓 | **_Self-Assessment: The League Reports_** |
