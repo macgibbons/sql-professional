@@ -4,7 +4,7 @@
 
 ### Installing PostgreSQL Server & pgAdmin 4
 
-We will be using PostgreSQL throughout this course for your relational database management system. pgAdmin is the application we will use to manage and interact with out databases.
+We will be using PostgreSQL throughout this course for your relational database management system. pgAdmin is the GUI application we will use to manage and interact with our databases. And psql is the interactive terminal for Postgres.
 
 Follow the instructions [here](https://www.postgresqltutorial.com/install-postgresql-macos/) to install PostgreSQL Server, pgAdmin and psql.
 
@@ -22,7 +22,7 @@ Once you have restored the test database, you can see your tables by navigating 
 
 Now you can try running a query!
 
-Make sure your dvdrental db in selected. In the image below, **1** opens your query editor. Type in the following:
+Make sure your dvdrental db is selected. In the image below, **1** opens your query editor. Type in the following:
 
 ```sql
 SELECT
@@ -86,14 +86,14 @@ defaults write com.apple.finder AppleShowAllFiles YES
 
 ## SSH Key
 
-SSH is a technology that allows you to create a very secure connection between your computer, and a computer located somewhere else in the world. It's an acronym for Secure SHell. When you create an SSH key on your computer, it actually creates two files
+SSH is a technology that allows you to create a very secure connection between your computer, and a computer located somewhere else in the world. It's an acronym for Secure Shell. When you create an SSH key on your computer, it actually creates two files
 
 1. A public key file that you share with other people and computers. It is usually named `id_rsa.pub`.
 1. A private key file that you never, ever, ever, ever, ever share with anyone. It is usually named `id_rsa`.
 
 ### Creating Your SSH Key
 
-Watch a short video for [creating an SSH key in the terminal](https://youtu.be/znRMcNG9_qQ) so that you an work with Github.
+Watch a short video for [creating an SSH key in the terminal](https://youtu.be/znRMcNG9_qQ) so that you can work with Github.
 
 ### Add SSH Key to Github Account
 
