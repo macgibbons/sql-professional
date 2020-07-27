@@ -4,28 +4,7 @@
 Databases are everywhere. Everyday you interact with databases whether you realize it our not. It can be through a website you visit or a contact list on your mobile phone or the checkout at the grocery store. The majority of the world's data resides in databases. 
 
 ## Two main ways to go with databases
-Today databases are considered either of relational (SQL) or non-relational (NoSQL) type. The fundamental differences between these two types of databases comes down to how the data gets stored, how the data is retrieved.
-
-## Relational Databases (SQL)
-
-Relational databases are the time-tested standard for storing data. You'll most likely be more familiar with the table, column, and row structure that reflect relational databases (Reminicent to Excel in some ways). Relational databases are built with a predefined schema before you can add the data to the database. For example, you define a customer table with columns for first name, last name and email, once this is complete then you can think about interacting with the database data.
-
-To be able to communicate with a realtional database a working knowledge of SQL (Structured Query Language) is required. SQL is a programming language which is used by humans and machines for interacting with databases and will be the focus of this course.
-
-#### Below is a SQL statement that allows us to retrieve all the orders by a specific customer.
-```
-select * from orders where customer_id = 1;
-```
-<br>
-
-### Relational type
-<img src="./images/aggregate-split.png">
-<img src="./images/sql-table.jpg">
-
-<br>
-<br>
-
-Relational database engines you might have heard of include [MySQL](https://dev.mysql.com/doc/refman/8.0/en/), [PostgreSQL](https://www.postgresql.org/docs/12/index.html), [SQLite](https://www.sqlite.org/docs.html), [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15), [Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html), and [Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/index.html).
+Today databases are considered either relational (SQL) or non-relational (NoSQL) type. The fundamental differences between these two types of databases comes down to how the data gets stored, how the data is retrieved.
 
 <br>
 
@@ -62,6 +41,27 @@ Graph databases store data in a relationship map. It's built for storing billion
 <img src="./images/graph.png" width="480">
 
 <br><br>
+
+## Relational Databases (SQL)
+
+Relational databases are the time-tested standard for storing data. You'll most likely be more familiar with the table, column, and row structure that reflect relational databases (Reminicent to Excel in some ways). Relational databases are built with a predefined schema before you can add the data to the database. For example, you define a customer table with columns for first name, last name and email, once this is complete then you can think about interacting with the database data.
+
+To be able to communicate with a realtional database a working knowledge of SQL (Structured Query Language) is required. SQL is a programming language which is used by humans and machines for interacting with databases and will be the focus of this course.
+
+#### Below is a SQL statement that allows us to retrieve all the orders by a specific customer.
+```
+select * from orders where customer_id = 1;
+```
+<br>
+
+### Relational type
+<img src="./images/aggregate-split.png">
+<img src="./images/sql-table.jpg">
+
+<br>
+<br>
+
+Relational database engines you might have heard of include [MySQL](https://dev.mysql.com/doc/refman/8.0/en/), [PostgreSQL](https://www.postgresql.org/docs/12/index.html), [SQLite](https://www.sqlite.org/docs.html), [Microsoft SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/?view=sql-server-ver15), [Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html), and [Oracle](https://docs.oracle.com/en/database/oracle/oracle-database/index.html).
 
 ## Bonus Reading
  [More on the four main types of NoSql databases](https://www.mongodb.com/scale/types-of-nosql-databases)
