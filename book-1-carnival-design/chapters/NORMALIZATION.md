@@ -4,6 +4,7 @@ This chapter will provide content for relationships between different resources 
 
 ## Videos to Watch Before Class
 
+1. [Database Tutorial for Beginners](https://www.youtube.com/watch?v=wR0jg0eQsZA)
 1. [MicroNugget: How to Normalize Databases](https://www.youtube.com/watch?v=upS2HlUj1gI)
 1. [Basic Concept of Database Normalization - Simple Explanation for Beginners](https://www.youtube.com/watch?v=xoTyrdT9SZI)
 1. [Beginner SQL - 12 - Normalization - Part 1](https://www.youtube.com/watch?v=0AwcMKR8ijk)
