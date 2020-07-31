@@ -63,3 +63,9 @@ For more help understanding [watch this video.](https://www.youtube.com/watch?v=
 
 **Step 3** 
 Checkout the next chapter - *Team Project: Carnival Design*
+
+
+
+## Extra Learning
+
+Defining relationship - One-to-Many Relationships [Video](https://www.youtube.com/watch?v=V5DyvUfsboA)
