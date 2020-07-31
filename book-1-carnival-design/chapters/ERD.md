@@ -1,11 +1,25 @@
-
 # Entity Relationship Diagrams (ERD)
 
-An Entity Relaionship Diagram (ERD) is just that...it's a diagram that represents the entities you work with (i.e. Products, Customers and Sales) and their relationships to each other. A database diagram is the technical representation of an ERD. In the diagram below we see how an ERD diagram gives us a sense about how we can organize our database. We get a glimps into how products might relate to categories, colors and sizes.  
+This chapter will introduce you to the concepts of entities being stored in a database, and then how to think about, and design, the relationships between the different entities.
+
+## Tools
+
+1. Visit the lucidchart.com site, and register for a free account.
+1. Read about [Lucid ERD features](https://www.lucidchart.com/pages/examples/er-diagram-tool).
+
+## Goals
+
+After watching the videos for this chapter, doing the exercises, and discussing with your instructor, you should understand the following concepts.
+
+1. Representing an entity in an ERD.
+1. Represent a relationship (i.e. cardinality) between entities.
+1. Represent an attribute, or field, on an entity.
+
+## Overview
+
+An Entity Relaionship Diagram (ERD) is just that...it's a diagram that represents the entities you work with (i.e. Products, Customers and Sales) and their relationships to each other. A database diagram is the technical representation of an ERD. In the diagram below we see how an ERD diagram gives us a sense about how we can organize our database. We get a glimps into how products might relate to categories, colors and sizes.
 
 ERD diagrams help to organize all the information about your organization's data structure.
-
-<br>
 
 <img src="./images/erd_diagram_ex1.png" width="600">
 
@@ -37,35 +51,42 @@ In database design you may hear about *maxiumum cardinality*. It refers to how r
 
 It is possible to be more specific with your cardinalities. This is done using minimum cardinalities. *minimum cardinality* define the lowest possible relationship required for a relationship. For instance, it maybe required that ONE Student get assigned to 0 OR ONE Computer. The symbols you see below help describe the various relationship cardinalities. Minimum cardinality symbols sit on the inside of maximum cardinalities. Now see how the One-to-One relationship would now with a minimum included.
 
-For more help understanding [watch this video.](https://www.youtube.com/watch?v=TwIbBoTUPHQ)
-
-<br>
-
 <img src="./images/one-to-one_with_zero.png" width="600">
-
-
-<br>
-<br>
 
 ### Below is a diagram of ERD cardinalities you can use:
 
 <img src="./images/CardinalityGuide.png" width="600">
 
-<br>
-<br>
+## Videos to Watch Before Class
 
-## Let's get ready to build our own ERD!
+1. [Entity Relationship Diagram (ERD) Tutorial - Part 1](https://www.youtube.com/watch?v=QpdhBUYk7Kk)
+1. [Entity Relationship Diagram (ERD) Tutorial - Part 2](https://www.youtube.com/watch?v=-CuY5ADwn24)
+1. [How to Design Your First Database](https://www.youtube.com/watch?v=cepspxPAUTA)
+1. [Entity-Relationship Diagrams: Minimum cardinalities: Order processing example](https://www.youtube.com/watch?v=TwIbBoTUPHQ)
 
-**Step 1:** You will need to create an account with a diagramming software. For this class we will use a cloud-based software called [Lucid Chart](https://www.lucidchart.com/). Please register an account if you have not already.
+## Practice: Doctors and Patients
 
+Use Lucid Chart to create an ERD that represents the entities of **Doctor** and **Patient**.
 
-**Step 2** Read about Lucid ERD features [here](https://www.lucidchart.com/pages/examples/er-diagram-tool) and then click the button to *Make an ERD*.
+1. What would be good attributes, or fields, or each entity?
+1. What is the relationship between the two entities?
+1. What should be the primary key on each entity?
+1. Which should hold the primary key of the other as a foreign key?
 
-**Step 3** 
-Checkout the next chapter - *Team Project: Carnival Design*
+## Practice: Coffee Roasters and Suppliers
 
+Use Lucid Chart to create an ERD that represents the entities of **CoffeeShop**, **CoffeeSupplier**, and **CoffeeDrinker**.
 
+1. What would be good attributes, or fields, or each entity?
+1. What is the relationship between the two entities?
+1. What should be the primary key on each entity?
+1. Which should hold the primary key of the other as a foreign key?
 
-## Extra Learning
+## Optional Challenge: Products and Customer Orders
 
-Defining relationship - One-to-Many Relationships [Video](https://www.youtube.com/watch?v=V5DyvUfsboA)
+Use Lucid Chart to create an ERD that represents the entities of **Customer**, **Product**, and **Order** for an online shop.
+
+1. What would be good attributes, or fields, or each entity?
+1. What is the relationship between the two entities?
+1. What should be the primary key on each entity?
+1. Which should hold the primary key of the other as a foreign key?
