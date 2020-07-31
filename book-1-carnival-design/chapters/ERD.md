@@ -22,8 +22,27 @@ After watching the videos for this chapter, doing the exercise, and discussing w
 
 ## Practice: Doctors and Patients
 
+Use Lucid Chart to create an ERD that represents the entities of **Doctor** and **Patient**.
+
+1. What would be good attributes, or fields, or each entity?
+1. What is the relationship between the two entities?
+1. What should be the primary key on each entity?
+1. Which should hold the primary key of the other as a foreign key?
 
 ## Practice: Coffee Roasters and Suppliers
 
+Use Lucid Chart to create an ERD that represents the entities of **CoffeeShop**, **CoffeeSupplier**, and **CoffeeDrinker**.
+
+1. What would be good attributes, or fields, or each entity?
+1. What is the relationship between the two entities?
+1. What should be the primary key on each entity?
+1. Which should hold the primary key of the other as a foreign key?
 
 ## Optional Challenge: Products and Customer Orders
+
+Use Lucid Chart to create an ERD that represents the entities of **Customer**, **Product**, and **Order** for an online shop.
+
+1. What would be good attributes, or fields, or each entity?
+1. What is the relationship between the two entities?
+1. What should be the primary key on each entity?
+1. Which should hold the primary key of the other as a foreign key?
