@@ -19,5 +19,4 @@ Carnival now offers dealerships around the country to use our platform to record
 | 11 | [Carnival Sales Transaction](./chapters/SALES_TRANSACTIONS.md) |
 | 12 | [Carnival Returns Transaction](./chapters/RETURN_TRANSACTIONS.md) |
 | 👨‍👨‍👦‍👦 | **_Team Project: Carnival Purchase Queue_** |
-| 👩🏾‍🎓 | **_Self-Assessment: The League Procedures_** |
 
