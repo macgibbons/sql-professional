@@ -13,9 +13,7 @@ Carnival was able to get by as a bootstrapped startup using Google Sheet and CSV
 | 3 | [Data Relationships &amp; Normalization](./chapters/NORMALIZATION.md) |
 | 4 | [Entity Relationship Diagram](./chapters/ERD.md) |
 | 👨‍👨‍👦‍👦 | [**_Team Project: Carnival Design_**](./chapters/CARNIVAL_DESIGN.md) |
-| 5 | [Composite Keys](./chapters/ERD_COMPOSITE_KEYS.md) |
-| 6 | [Carnival ERD Revisited](./chapters/CARNIVAL_COMPOSITE_KEYS.md) |
-| 7 | [Creating Tables &amp; Relationship Constraints](./chapters/CREATE_TABLES_COLUMNS.md) |
-| 8 | [Mutable and Immutable Data](./chapters/MUTABILITY.md) |
-| 9 | [Importing Data](./chapters/IMPORTING.md) |
-| 10 | [Inserting Data](./chapters/INSERTS.md) |
+| 5 | [Creating Tables &amp; Relationship Constraints](./chapters/CREATE_TABLES_COLUMNS.md) |
+| 6 | [Mutable and Immutable Data](./chapters/MUTABILITY.md) |
+| 7 | [Importing Data](./chapters/IMPORTING.md) |
+| 8 | [Inserting Data](./chapters/INSERTS.md) |
