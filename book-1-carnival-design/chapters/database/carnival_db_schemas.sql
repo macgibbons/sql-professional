@@ -12,7 +12,7 @@ create table Dealerships (
 create table DealershipEmployees (
   dealership_employee_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   employee_id INT,
-  dealership_id INT
+  dealership_id INT,
   FOREIGN KEY (employee_id) REFERENCES Employees (employee_id),
   FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
 );
