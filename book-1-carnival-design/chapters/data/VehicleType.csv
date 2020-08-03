@@ -1,0 +1,26 @@
+vehicle_type_id,body_type,make,model
+1,Car,Mercedes-Benz,C-Class
+2,Truck,Mitsubishi,3000GT
+3,Truck,Mazda,MX-6
+4,Truck,Dodge,Caravan
+5,Truck,Nissan,Murano
+6,Van,Buick,Regal
+7,Van,Subaru,Loyale
+8,Van,Plymouth,Grand Voyager
+9,Truck,Mitsubishi,Chariot
+10,Truck,Subaru,Impreza WRX
+11,Car,Ford,Explorer Sport Trac
+12,Truck,Toyota,Corolla
+13,Van,Lotus,Exige
+14,Van,Saturn,S-Series
+15,Van,Mercedes-Benz,E-Class
+16,Car,Suzuki,Forenza
+17,Truck,BMW,M Roadster
+18,Truck,Volkswagen,Golf
+19,Car,Pontiac,6000
+20,Truck,Chevrolet,Blazer
+21,Van,GMC,Canyon
+22,Car,Mercedes-Benz,CL-Class
+23,Truck,GMC,Canyon
+24,Truck,Kia,Sportage
+25,Truck,Chevrolet,G-Series G20

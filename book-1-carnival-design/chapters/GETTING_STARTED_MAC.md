@@ -10,7 +10,7 @@ Follow the instructions [here](https://www.postgresqltutorial.com/install-postgr
 
 #### Error on Database Restore
 
-If you get `Failed (exit code: -6)` when you are trying to restore the dvdrental database, please download [the latest version of pgAdmin](https://www.pgadmin.org/download/pgadmin-4-macos/) and replace the current one in your Applications directory. 
+If you get `Failed (exit code: -6)` when you are trying to restore the dvdrental database, please download [the latest version of pgAdmin](https://www.pgadmin.org/download/pgadmin-4-macos/) and replace the current one in your Applications directory.
 
 Make sure to restart any open pgAdmin windows.
 
@@ -18,7 +18,7 @@ Make sure to restart any open pgAdmin windows.
 
 Once you have restored the test database, you can see your tables by navigating into the `dvdrental > Schemas > Public > Tables`.
 
-![Accessing the tables](/images/dvdrentals_tables.png)
+![Accessing the tables](./images/dvdrentals_tables.png)
 
 Now you can try running a query!
 
@@ -35,7 +35,7 @@ FROM
 
 Click the icon labeled **2** to run your SELECT statement and make sure you get back results.
 
-![Query Editor](/images/run_select_query.png)
+![Query Editor](./images/run_select_query.png)
 
 ### Database Connections
 
