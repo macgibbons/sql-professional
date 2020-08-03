@@ -2,6 +2,8 @@
 
 This chapter will introduce you to the concepts of entities being stored in a database, and then how to think about, and design, the relationships between the different entities.
 
+Carnival set out to design their new relational database. They used an Entity Relationship Diagram to explain their business operations data. They will define their entites, the attributes of those entities and the relationships between the entity data.
+
 ## Tools
 
 1. Visit the lucidchart.com site, and register for a free account.
