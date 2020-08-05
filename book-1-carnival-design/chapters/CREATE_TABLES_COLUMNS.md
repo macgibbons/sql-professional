@@ -6,9 +6,9 @@ This chapter will show how to use the `CREATE TABLE` statement to create the tab
 
 1. PostgreSQL - You should already have PosgreSQL installed from the Getting Started Chapter.
 
-2. pgAdmin & PSQL Shell - Should come along with the installation of your PostgreSQL database management system.
+2. pgAdmin - Should come along with the installation of your PostgreSQL.
 
-3. Read [pgAdmin 4 Documentation](https://www.pgadmin.org/docs/pgadmin4/latest/index.html)
+3. Reference for [pgAdmin 4 Documentation](https://www.pgadmin.org/docs/pgadmin4/latest/index.html)
 
 ## Goals
 
@@ -16,8 +16,7 @@ After this chapter, doing the exercises, and discussing with your instructor, yo
 
 1. Creating a new database with pgAdmin
 2. Creating a table in your new database
-3. How to define your field data types
-1. How to add a relationship between tables
+3. How to add a relationship between tables
 
 <br>
 
