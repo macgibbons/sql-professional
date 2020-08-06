@@ -1,4 +1,4 @@
-vehicle_make_id,name
+vehicle_body_type_id,name
 1,Car
 2,Truck
 3,Van
