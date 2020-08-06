@@ -14,63 +14,21 @@ This chapter will show how to use the `CREATE TABLE` statement to create the tab
 
 After this chapter, doing the exercises, and discussing with your instructor, you should understand the following concepts.
 
-1. Creating a new database with pgAdmin
-2. Creating a table in your new database
-3. How to add a relationship between tables
+1. Creating a table in your database
+2. How to add relationship constraints
 
 <br>
 
 ## Carnival's Next Steps
-After the ERD design of their database Carnival is ready to actually build their database. They decided to use a PostgreSQL database and the native database administration software, pgAdmin 4 for the GUI interface.
+Monique did a great job with the initial database. But we noticed that she didnt normalize her data enough. When we take a look at her VehicleType what do you notice?
 
+## Practice: VehicleType Normalization
 
-For now we will use the GUI, *pgAdmin 4* to interact with our database. But you should know that it is possible to use the interactive terminal named, *PSQL Shell* that comes with your installation of PostgreSQL. [More info on PSQL](http://postgresguide.com/utilities/psql.html).
+Review Carnival's the ERD and identify what you need to do to normalize the VehcileTypes Table.
 
-
-### Let's begin with creating an new database in pgAdmin!
-
-pgAdmin is a browser-based software that connects to the local database on your computer. It's important to note that this is not a cloud-based software. It is in fact installed on your machine. It just runs itself in the browser.
-
-### How to create a database with pgAdmin?
-
-1. Once you launch pgAdmin you should see a screen that looks like a directory with a top level folder named > Servers.
-
-<img src="./images/initial_state.png" width="500">
-
-<br>
-<br>
-
-2. Your next step is to open the > *Servers* to see the inside tree structure.
-
-<img src="./images/open_servers.png" width="500">
-
-<br>
-<br>
-
-3. Right click on *PostgreSQL 12* and hover over  *Create* and then click on *Database*.
-
-<img src="./images/create_db.png" width="500">
-
-<br>
-<br>
-
-4. Then, simply name the database and click *Save*.
-
-<img src="./images/naming_db.png" width="500">
-
-<br>
-<br>
-
-4. You should now be able to see your new database nested under the *Databases* directory.
-
-<img src="./images/new_carnival_db.png" width="500">
-
-<br>
-<br>
-
-### Query Editor
-
-To be able to start writing SQL into your editor look for this icon <img src="./images/query_icon.png">  in the menu bar. This will open the query editor tool.
+1. What tables still need to be created?
+1. What are the relationships can you identify?
+1. Which should hold the primary key of the other as a foreign key?
 
 <br>
 
@@ -81,6 +39,7 @@ We are all set with our PostgreSQL database now created. We will begin to practi
 To initially create a database we use what is called a Data Definition command, known as `CREATE` statement. The diagram below shows the various SQL commands and their categorization within the SQL language.
 
 <img src="./images/sql-commands.png">
+
 
 
 ### The `CREATE TABLE` Statement
@@ -102,7 +61,7 @@ What is a data type? In relational databases, data types tell us what the data r
 | Integer  | int(2)  |
 | Character varying  | varchar(50)  |
 | Boolean  | bool  |
-| Numeric  | decimal(2)  |
+| Numeric  | decimal(2)  |s
 | Timestamp with time zone | timestampz  |
 
 <br>
