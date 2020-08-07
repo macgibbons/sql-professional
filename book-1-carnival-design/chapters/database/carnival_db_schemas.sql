@@ -22,7 +22,7 @@ create table Customers (
   first_name VARCHAR(50),
   last_name VARCHAR(50),
   email VARCHAR(50),
-  phone_number VARCHAR(50),
+  phone VARCHAR(50),
   street VARCHAR(50),
   city VARCHAR(50),
   state VARCHAR(50),
@@ -63,7 +63,7 @@ create table VehicleTypes (
 
 create table Vehicles (
   vehicle_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  vin_number VARCHAR(50),
+  vin VARCHAR(50),
   engine_type VARCHAR(2),
   vehicle_type_id INT,
   exterior_color VARCHAR(50),
