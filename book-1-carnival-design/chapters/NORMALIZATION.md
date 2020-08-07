@@ -1,10 +1,16 @@
-# Relationships and Normalization
+# Database Normalization
 
-## Database Normalization
+Data normalization is a design technique that is used to reduce data redundancy and increase data integrity. This helps to avoid modifying our database as it grows and simplify our queries. 
 
-Data normalization is a design technique that is used to reduce data redundancy and increase data integrity. This helps to avoid modifying our database as it grows and simplify our queries.
+The three commonly used forms of database normalization are 1st, 2nd and 3rd normal form or 1NF, 2NF and 3NF. There are additonal normal forms but we will not be covering those advanced normal forms.
 
-The three commonly used forms of database normalization are 1st, 2nd and 3rd normal form or 1NF, 2NF and 3NF. There are additonal normal forms but we will not be covering those advanced normal forms. 
+## Videos to Watch Before Class
+
+1. [Database Tutorial for Beginners](https://www.youtube.com/watch?v=wR0jg0eQsZA)
+1. [MicroNugget: How to Normalize Databases](https://www.youtube.com/watch?v=upS2HlUj1gI)
+1. [Basic Concept of Database Normalization - Simple Explanation for Beginners](https://www.youtube.com/watch?v=xoTyrdT9SZI)
+1. [Beginner SQL - 12 - Normalization - Part 1](https://www.youtube.com/watch?v=0AwcMKR8ijk)
+1. [Beginner SQL - 12 - Normalization - Part 2](https://www.youtube.com/watch?v=28kPmHtiWdM)
 
 Normal forms are progressive. This means in order for a database to be considered 3NF, it already meets all requirements for 2NF and 1NF. And in order for a database to qualify for 2NF, it satisfies all the rules for INF.
 
@@ -41,10 +47,15 @@ Our normalized database:
 
 ![3nf](./images/normalization_3nf.png)
 
+## Questions to Discuss in Class
+
+1. What data in Carnival is not normalized?
+1. After you identify non-normalized data, have suggestions for what new CSVs should be created to normalize the data.
+
 ## Practice: Student Exercises
 
-Given the following [data](./data/normalization/student_exercises.csv), what would it look like in 1NF, 2NF and 3NF?
+Given the following [data](./data/normalization_practice/student_exercises.csv), what would it look like in 1NF, 2NF and 3NF?
 
 ## Practice: Patients
 
-Normalize the following [data](./data/normalization/patients.csv) so that it meets all requirements for 3NF.
+Normalize the following [data](./data/normalization_practice/patients.csv) so that it meets all requirements for 3NF.

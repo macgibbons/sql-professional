@@ -16,4 +16,3 @@ In this book you will learn fundamental techniques to improve performance.
 | 6 | [Sales by Dealership Improvement](./chapters/SALES_INDEX.md) |
 | 7 | [Inventory Age Improvement](./chapters/INVENTORY_INDEX.md) |
 | 👨‍👨‍👦‍👦 | **_Team Project: Carnival Reports Performance_** |
-| 👩🏾‍🎓 | **_Self-Assessment: The League Indexes_** |

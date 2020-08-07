@@ -1,7 +1,14 @@
+
+
+
 # Introduction to Databases
-
-
 Databases are everywhere. Everyday you interact with databases whether you realize it our not. It can be through a website you visit or a contact list on your mobile phone or the checkout at the grocery store. The majority of the world's data resides in databases. 
+
+Carnival has data that helps them keep track of their business operations such as data on dealerships, employees, vehicle inventory, customers & sales transactions.
+
+Carnival did their research into the various types of database management systems to ensure they were choosing the best option. Below is a little of their research. Carnival decided a relational database management system was the best option for their company. 
+
+<br>
 
 ## Two main ways to go with databases
 Today databases are considered either relational (SQL) or non-relational (NoSQL) type. The fundamental differences between these two types of databases comes down to how the data gets stored, how the data is retrieved.

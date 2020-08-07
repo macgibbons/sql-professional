@@ -23,5 +23,4 @@ Carnival now has hired some top-notch business analysts and product managers. Be
 | 14 | [Views with CTEs](./chapters/CTE_VIEWS.md) |
 | 15 | [Dealership Sales View](./chapters/DEALER_VIEW.md) |
 | 16 | [Salesperson Sales View](./chapters/SALESPERSON_VIEW.md) |
-| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Web Reports_** |
-| 👩🏾‍🎓 | **_Self-Assessment: The League Reports_** |
+| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Reports_** |
