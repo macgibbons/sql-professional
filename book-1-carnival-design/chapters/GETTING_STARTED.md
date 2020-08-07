@@ -62,9 +62,9 @@ Github is the primary site that software developers throughout the world use to 
 
 ## Git Bash for Windows
 
-If are on a Windows PC and do not have Git Bash installed, please follow the instructions [here](https://gitforwindows.org/).
+If are on a Windows PC and do not have a command line application installed, please follow the instructions [here](https://gitforwindows.org/) to install Git Bash.
 
-**The following installation instructions are to be done in your command line (Terminal for Macs & Git Bash for Windows).**
+**The following installation instructions are to be done in your command line (Terminal for Macs & Git Bash/WSL for Windows).**
 
 ## Homebrew
 
