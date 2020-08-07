@@ -1,4 +1,4 @@
-vehicle_id,vin_number,engine_type,vehicle_type_id,exterior_color,interior_color,floor_price,msr_price,miles_count,year_of_car
+vehicle_id,vin,engine_type,vehicle_type_id,exterior_color,interior_color,floor_price,msr_price,miles_count,year_of_car
 1,WVGEF9BP3FD485590,V4,22,Aquamarine,Khaki,28588,15320,152,2019
 2,WBAUC9C51DV812918,V8,14,Yellow,Orange,30553,18442,383,2018
 3,1G6KF54953U872977,V8,16,Goldenrod,Indigo,26490,15608,47,2018

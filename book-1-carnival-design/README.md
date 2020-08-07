@@ -6,12 +6,11 @@ Carnival was able to get by as a bootstrapped startup using Google Sheet and CSV
 
 | #  | Carnival Migration |
 |--|--|
-| 🍎 | [Installations for Mac](./chapters/GETTING_STARTED_MAC.md) |
-| 💻 | [Installations for Windows](./chapters/GETTING_STARTED_WINDOWS.md) |
+| 💻 | [Installations](./chapters/GETTING_STARTED.md) |
 | 1 | [Introduction to Databases](./chapters/DATABASE_INTRODUCTION.md) |
 | 2 | [Getting the Data](./chapters/EXPLORE_CSV.md) |
-| 3 | [Entity Relationship Diagram](./chapters/ERD.md) |
-| 4 | [Data Relationships &amp; Normalization](./chapters/NORMALIZATION.md) |
+| 3 | [Data Relationships & ERDs](./chapters/ERD.md) |
+| 4 | [Data Normalization](./chapters/NORMALIZATION.md) |
 | 👨‍👨‍👦‍👦 | [**_Team Project: Carnival Design_**](./chapters/CARNIVAL_DESIGN.md) |
 | 👩🏾‍🎓 | [**_Self-Assessment: The League Design_**](./chapters/LEAGUE_DESIGN.md) |
 | 5 | [Mutable and Immutable Data](./chapters/MUTABILITY.md) |
