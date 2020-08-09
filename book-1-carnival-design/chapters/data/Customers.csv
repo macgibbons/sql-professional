@@ -1,4 +1,4 @@
-id,first_name,last_name,email,phone_number,street,city,state,zipcode,company_name
+customer_id,first_name,last_name,email,phone,street,city,state,zipcode,company_name
 1,Aeriel,McAlinion,amcalinion0@timesonline.co.uk,810-320-1717,18950 Cottonwood Place,Flint,MI,48555,"Cormier, Grimes and Huels"
 2,Odele,Errowe,oerrowe1@creativecommons.org,806-583-8572,9 Truax Court,Lubbock,TX,79491,Stanton and Sons
 3,Margalo,McGarvey,mmcgarvey2@lulu.com,513-508-2017,989 Heath Alley,Cincinnati,OH,45271,Will-Wehner
