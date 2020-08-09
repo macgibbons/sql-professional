@@ -12,26 +12,43 @@ This chapter covers the `INSERT INTO` statement. Discuss order of operations in 
 
 ## INSERT INTO
 
-The INSERT INTO statement is used to add new records to a table. 
+The INSERT INTO statement is used to add new records to a table. Provide values for the columns (that will not auto-increment, i.e., PK) when you are adding a new row.
 
-If you provide values for all columns (that will not auto-increment, i.e., PK) when you are adding a new row, you do not have to explicitly specify the column names. 
-
-If you want to only add data to specific columns when you add a new record, then you must list out the columns for which your will be providing data.
+Let's add a new sales type and add a new record for a sale that is of the newly added sales type.
 
 
 ```sql
--- INSERT statement where columns are listed:
-INSERT INTO public.sales(
-  sales_type_id, vehicle_id, employee_id, dealership_id, price, purchase_date, pickup_date, invoice_number, payment_method)
-VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+-- INSERT statement to add a new sale:
+INSERT INTO public.sales(sales_type_id, vehicle_id, employee_id, dealership_id, price, invoice_number)
+VALUES (3, 21, 12, 7, 55999, 123477289);
 
--- INSERT statement without explicit columns names:
-INSERT INTO public.salestypes
-VALUES ("Lease to Buy");
+-- INSERT statement to add a new sales type:
+INSERT INTO public.salestypes(name)
+VALUES ('Rent');
 ```
 
+Now if you run the above INSERTs together you will get the following error:
 
+```
+ERROR:  insert or update on table "sales" violates foreign key constraint "sales_sales_type_id_fkey"
+DETAIL:  Key (sales_type_id)=(3) is not present in table "salestypes".
+```
+Because the new sales record that is being added is dependent on the sales type already existing and therefore having a primary key, we must run the INSERT statement for the sales type first. 
 
+The FK constraint`sales_type_id` on the Sales table with will not let you reference a sales type that does not exist.
+
+## Inserting Multiple Rows
+
+You can add multiple records in a single INSERT statement with the following syntax:
+
+```sql
+INSERT INTO 
+public.sales(sales_type_id, vehicle_id, employee_id, dealership_id, price, invoice_number)
+VALUES 
+(3, 21, 12, 7, 55999, 123477289),
+(3, 14, 3, 7, 19999, 232727349),
+(3, 6, 75, 7, 39500, 8635482010);
+```
 
 ## Practice: Carnival
 
