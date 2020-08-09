@@ -12,7 +12,6 @@ Carnival was able to get by as a bootstrapped startup using Google Sheet and CSV
 | 3 | [Data Relationships & ERDs](./chapters/ERD.md) |
 | 4 | [Data Normalization](./chapters/NORMALIZATION.md) |
 | 👨‍👨‍👦‍👦 | [**_Team Project: Carnival Design_**](./chapters/CARNIVAL_DESIGN.md) |
-| 👩🏾‍🎓 | [**_Self-Assessment: The League Design_**](./chapters/LEAGUE_DESIGN.md) |
 | 5 | [Mutable and Immutable Data](./chapters/MUTABILITY.md) |
 | 6 | [Importing Data](./chapters/IMPORTING.md) |
 | 7 | [Creating Tables &amp; Relationship Constraints](./chapters/CREATE_TABLES_COLUMNS.md) |

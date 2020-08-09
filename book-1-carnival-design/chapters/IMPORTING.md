@@ -29,7 +29,7 @@ Instead of hiring a SQL expert, Carnival decided to save money and assign their 
 
 <br>
 
-## Ceating a new database
+## Creating a new database
 
 For this course you will use pgAdmin for all of your database interactions. pgAdmin is a browser-based software that connects to the local databases on your computer. It's important to note that this is not a cloud-based software. It is in fact installed on your machine. It just runs itself in the browser.
 
@@ -89,16 +89,19 @@ All of the tables schema information lives inthe Schemas directory.
 
 Now that the database and tables are Monique is ready to import the actual data from Carnival's .csv files.
 
-Within the Schemas directory you will see a listing of the tables in the database. Right click on the Customers table and click Import/Export. 
+Within the Schemas directory you will see a listing of the tables in the database. Right click on the Customers table and click Import/Export.
 
 <img src="./images/import_export.png" width="500">
 
 <br>
 <br>
 
-The Import/Export data modal will allow you to specify how to import the data. In our situation, We want to *flip the toggle* to Import, *Choose* csv as the file format and *Browse* to find our Customers csv file. Next, we will need include the Headers and *type in* a "," in for our delimiter. Then click OK.
-
+The Import/Export data modal will allow you to specify how to import the data. In our situation, We want to *flip the toggle* to Import, *Choose* csv as the file format and *Browse* to find our Customers csv file. Next, we will need include the Headers and *type in* a "," in for our delimiter.
 
 <img src="./images/import_details.png" width="500">
 
+Lastly, click the _Columns_ tab in the window and uncheck the column for the primary key. This is because the database will be responsible for generating those, and the ones in the CSV file should be ignored.
 
+![animation of removing the primary key from the columns to import](./images/importing-remove-primary-key.gif)
+
+Then click the _OK_ button to start the import.
