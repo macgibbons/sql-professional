@@ -1,11 +1,16 @@
 # Carnival Sales Reps
 
-Practice chapter.
+## Recent Hires
 
-Multiple queries involving sales reps.
+1. Which employees were hired this month?
+1. Which employees were hired this year?
 
-1. Newest rep
-1. Most veteran rep
-1. Top selling rep
-1. Top selling rep per dealership
-1. etc...
+## Veterans
+
+1. Which employee has been working the longest at each dealership?
+1. What are the 10 most veteran employees across all dealerships in the Carnival platform?
+
+## Top Performance
+
+1. Which employees generate the most income per dealership?
+
