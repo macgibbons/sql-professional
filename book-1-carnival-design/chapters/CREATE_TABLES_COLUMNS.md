@@ -1,6 +1,6 @@
-# Creating Database Tables
+# Creating and Altering Database Tables
 
-This chapter will show how to use the `CREATE TABLE` statement to create the table, the attributes, and the relationship constraints.
+This chapter will show how to use the `CREATE TABLE` statement to create the table, the attributes, and the relationship constraints. We will also touch on the ALTER TABLE statement to change an existing table.
 
 ## Tools
 
@@ -15,7 +15,8 @@ This chapter will show how to use the `CREATE TABLE` statement to create the tab
 After this chapter, doing the exercises, and discussing with your instructor, you should understand the following concepts.
 
 1. Creating a table in your database
-2. How to add relationship constraints
+2. Altering an existing table
+3. Adding relationship constraints
 
 <br>
 
@@ -24,7 +25,7 @@ Monique did a great job with the initial database. But we noticed that she didnt
 
 ## Practice: VehicleType Normalization
 
-Review Carnival's the ERD and identify what you need to do to normalize the VehcileTypes Table.
+Review Carnival's the ERD and identify what you need to do to normalize the VehicleTypes Table.
 
 1. What tables still need to be created?
 1. What are the relationships can you identify?
@@ -36,7 +37,7 @@ Review Carnival's the ERD and identify what you need to do to normalize the Vehc
 
 We are all set with our PostgreSQL database now created. We will begin to practice our SQL skills. 
 
-To initially create a database we use what is called a Data Definition command, known as `CREATE` statement. The diagram below shows the various SQL commands and their categorization within the SQL language.
+To initially create a database we use what is called a Data Definition command, known as `CREATE` statement. The diagram below shows other SQL commands and their categorization within the SQL language.
 
 <img src="./images/sql-commands.png">
 
@@ -68,21 +69,20 @@ What is a data type? In relational databases, data types tell us what the data r
 
 ## Back to Carnival
 
-Let's try creating a table for reals...Carnival has a Vehicles table that describes vehicles they have in inventory. 
+Let's try creating a table for reals...Carnival has a Vehicles table that describes vehicles in inventory. Below is the create statment that Monique used to create the table. 
 
 ``` 
 CREATE TABLE Vehicles (
   vehicle_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  vin_number VARCHAR(50),
+  vin VARCHAR(50),
   engine_type VARCHAR(2),
-  vehicle_type_id INT,
+  vehicle_type_id INT REFERENCES VehicleTypes (vehicle_type_id),
   exterior_color VARCHAR(50),
   interior_color VARCHAR(50),
   floor_price INT,
   msr_price INT,
   miles_count INT,
-  year_of_car INT,
-  FOREIGN KEY (vehicle_type_id) REFERENCES VehicleTypes (vehicle_type_id)
+  year_of_car INT
 );
 ```
 
@@ -96,5 +96,64 @@ CREATE TABLE Vehicles (
 <br>
 
 
+## Adding Foreign Key Constraint to new table
+
+A foreign key constraint allows one table to be linked to another table. FOREIGN KEYs are a field (or collection of fields) from one table that references the PRIMARY KEY in another table. The table which hold the FOREIGN KEY is called the child table, and the table containing the candidate key is called the parent table.
+
+To add a foreign key contraint when creating a table the following must be added to the CREATE TABLE statement for every field that need a contraint.
+
+
+``` 
+
+  FOREIGN KEY (vehicle_type_id) REFERENCES VehicleType(vehicle_type_id)
+
+```
+or simply append this statement on the same line as a field definition
+
+``` 
+
+  vehicle_type_id INT (vehicle_type_id) REFERENCES VehicleType(vehicle_type_id)
+
+```
+
+Sometimes we will need to change the structure of an already existing table. We use an ALTER TABLE statement to change things like field names, field data types, adding foreign key contraints etc.
+
+
+## Adding Foreign Key Constraint to existing table
+
+``` 
+  ALTER TABLE child_table 
+  ADD CONSTRAINT constraint_name 
+  FOREIGN KEY (fk_columns) 
+  REFERENCES parent_table (parent_key_columns);
+
+```
+
+
+## Practice: Adding new tables for Carnival
+
+Use the Carnival ERD to identify the tables that are still missing in your database.
+
+1. Which tables need to be created after reviewing the ERD?
+2. What levels of normalization will these new tables be supporting?
+3. Do any of these tables have a foreign key in another table? What is the child table that would hold the foreign key(s).
+
+
+## Practice: Running a data migration
+
+What is a data migration? It is simply moving/changing your data from one location to another.
+
+A data migration will need to take place for Carnival where we will convert text to integers. Since that is not a learning requirment at this point we are providing the SQL script for you to conduct this.
+
+The result of the script will change all the text words to id numbers. The very important thing to note is that the datatype of these fields are still a varchar and not an integer yet! You will be respnonsible for changing the datatype in the next practice below.
+
+<a href="./databases/vehicle_type_data_migration.sql">Review data migration SQL here </a>
+
+## Practice: Altering a Table
+With the addition of our new tables Carnival is changing the way their data relates between tables, what needs to be done to the child table still?
+
+1. What kind of changes need to take place to the child table and the data? 
+2. What potential problems arise in the child table now that we need to add the foreign keys?
+3. Write and run the SQL statement(s) that are required to make these structural changes.
 
 
