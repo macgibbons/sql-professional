@@ -34,5 +34,5 @@ You will be using the following SQL keywords/functions.
 ## Best Sellers
 
 1. Who are the top 5 employees for generating sales income?
-1. Who are the top 5 delaership for generating sales income?
+1. Who are the top 5 dealership for generating sales income?
 1. Which vehicle model generated the most sales income?
