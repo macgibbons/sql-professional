@@ -16,7 +16,7 @@ Normal forms are progressive. This means in order for a database to be considere
 
 Here is our initial data before any normalization:
 
-![before normalization](./images/normalization_initial.png)
+![before normalization](./images/sql_normalization_initial.png)
 
 
 ## 1NF
@@ -24,9 +24,14 @@ Here is our initial data before any normalization:
 1. The values in each column of a table must be atomic.
 1. There are no repeating groups of columns.
 
-Here is our data after we meet the above requirements:
+To fulfill the first requirement, we separate out first name and last name for students. Since there are multiple email addresses associated with each student, we create a new table for that data.
 
-![1nf](./images/normalization_1nf.png)
+![1nf](./images/sql_normalization_1nf_step1.png)
+
+
+Since there are multiple instructors associated with a cohort, we add additional tables. Here is our data after we meet the above requirements:
+
+![1nf](./images/sql_normalization_1nf_step2.png)
 
 
 ## 2NF
@@ -34,18 +39,18 @@ Here is our data after we meet the above requirements:
 1. Table must be in 1NF.
 1. Every non candidate-key attribute must depend on the whole candidate key, not just part of it. This means that the primary key must be a single column.
 
-The data once it satisfies all conditions for 2NF:
+We add a unique identifier or primary key for each record in all of our tables. The data once it satisfies all conditions for 2NF:
 
-![2nf](./images/normalization_2nf.png)
+![2nf](./images/sql_normalization_2nf.png)
 
 ## 3NF
 
 1. Table must be in 2NF.
 1. The table has no transitive dependencies. A transitive dependency means that if you change the value of a column, the value of another column will also change.
 
-Our normalized database:
+If the cohort that a student is in changes, that means the Zoom classroom will also have to change. Here is our normalized database with no transitive dependencies:
 
-![3nf](./images/normalization_3nf.png)
+![3nf](./images/sql_normalization_3nf.png)
 
 ## Questions to Discuss in Class
 
