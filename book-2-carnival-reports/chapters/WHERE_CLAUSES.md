@@ -1,6 +1,6 @@
 # Filtering Data
 
-When getting data from the database using a `SELECT` statement, we can used the keyword `WHERE` to add at least one condition. All data returned by the `SELECT` statement must meet the condition(s). By specifying a `WHERE` clause, we can filter the data returned.
+When getting data from the database using a `SELECT` statement, we can used the keyword `WHERE` to add at least one condition. All data returned by the `SELECT` statement must meet the condition(s). By specifying a `WHERE` clause, we can filter the data returned. The `WHERE` clause can also be used with `INSERT`, 'UPDATE` and `DELETE` statements.
 
 ## Resources to Browse Before ClassVideos to Watch Before Class
 
@@ -13,6 +13,8 @@ When getting data from the database using a `SELECT` statement, we can used the 
 - [Video: Data Filters in Postgresql](https://www.youtube.com/watch?v=JNLptMLaaDE)
 
 ## Examples of the `WHERE` clause
+
+Try running these against your Carnival database.
 
 #### Customers who are from Texas:
 
