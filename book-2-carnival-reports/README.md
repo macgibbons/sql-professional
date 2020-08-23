@@ -18,7 +18,5 @@ Carnival now has hired some top-notch business analysts and product managers. Be
 | 10 | [Carnival Employee Recognition](./chapters/EMPLOYEES.md) |
 | 11 | [Carnival Customer Loyalty](./chapters/CUSTOMERS.md) |
 | 12 | [Virtual Tables with Views](./chapters/VIEWS.md) |
-| 13 | [Views with CTEs](./chapters/CTE_VIEWS.md) |
-| 14 | [Dealership Sales View](./chapters/DEALER_VIEW.md) |
-| 15 | [Salesperson Sales View](./chapters/SALESPERSON_VIEW.md) |
+| 13 | [Saving Your Views](./chapters/CARNIVAL_VIEWS.md) |
 | 👨‍👨‍👦‍👦 | **_Team Project: Carnival Reports_** |
