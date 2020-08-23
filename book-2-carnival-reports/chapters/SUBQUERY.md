@@ -1,6 +1,6 @@
 # Subqueries
 
-This chapter covershow to use subqueries to enhance your query filtering
+This chapter covers how to use subqueries to enhance your query filtering
 
 
 ## Resources to Browse Before Class
