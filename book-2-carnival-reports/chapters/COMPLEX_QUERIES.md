@@ -13,7 +13,7 @@ Run these against your Carnival database and observe the results.
 
 ```sql
 -- Find employees who haven't made any sales and the name of the dealership they work at.
-SELECT 
+SELECT
 	e.first_name,
     e.last_name,
     d.business_name,
@@ -26,9 +26,9 @@ WHERE s.price IS NULL;
 ```
 
 ```sql
--- Get all the departments in the database, 
+-- Get all the departments in the database,
 -- all the employees in the database and the floor price of any vehicle they have sold.
-SELECT 
+SELECT
 	d.business_name,
 	e.first_name,
     e.last_name,
@@ -41,7 +41,7 @@ INNER JOIN vehicles v ON s.vehicle_id = v.vehicle_id;
 ```
 
 ```sql
--- Use a self join to list all sales that will be picked up on the same day, 
+-- Use a self join to list all sales that will be picked up on the same day,
 -- including the full name of customer picking up the vehicle. .
 SELECT
 	CONCAT  (c.first_name, ' ', c.last_name) AS last_name,
@@ -50,14 +50,14 @@ SELECT
 FROM
     sales s1
 INNER JOIN sales s2
-    ON s1.sale_id <> s2.sale_id AND 
+    ON s1.sale_id <> s2.sale_id AND
        s1.pickup_date = s2.pickup_date
 INNER JOIN customers c
 	ON c.customer_id = s1.customer_id;
 ```
 
 ```sql
--- Get employees and customers who have interacted through a sale. 
+-- Get employees and customers who have interacted through a sale.
 -- Include employees who may not have made a sale yet.
 -- Include customers who may not have completed a purchase.
 
@@ -87,3 +87,16 @@ INNER JOIN employees e
 RIGHT JOIN employeetypes et
 	ON e.employee_type_id = et.employee_type_id;
 ```
+
+## Practice: Sales Type by Dealership
+
+Produce a report that lists every dealership, the number of purchases done by each, and the number of leases done by each.
+
+## Practice: Leased Types
+
+Produce a report that determines the most popular vehicle model that is leased.
+
+## Who Sold What
+
+1. What is the most popular vehicle make in terms of number of sales?
+1. Which employee type sold the most of that make?
