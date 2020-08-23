@@ -9,14 +9,6 @@ create table Dealerships (
   tax_id VARCHAR(50)
 );
 
-create table DealershipEmployees (
-  dealership_employee_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  employee_id INT,
-  dealership_id INT,
-  FOREIGN KEY (employee_id) REFERENCES Employees (employee_id),
-  FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
-);
-
 create table Customers (
   customer_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   first_name VARCHAR(50),
@@ -43,9 +35,19 @@ create table Employees (
   phone VARCHAR(50),
   dealership_id INT,
   employee_type_id INT,
-  FOREIGN KEY (employee_type_id) REFERENCES EmployeesTypes (employee_id),
+  FOREIGN KEY (employee_type_id) REFERENCES EmployeeTypes (employee_type_id),
   FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
 );
+
+create table DealershipEmployees (
+  dealership_employee_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  employee_id INT,
+  dealership_id INT,
+  FOREIGN KEY (employee_id) REFERENCES Employees (employee_id),
+  FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
+);
+
+
 
 create table SalesTypes (
   sales_type_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -94,7 +96,4 @@ create table Sales (
   FOREIGN KEY (customer_id) REFERENCES Customers (customer_id),
   FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
 );
-
-
-
 
