@@ -15,12 +15,6 @@ The data is provided for us for Carnival currently exists in the form of CSVs fo
 
 Each CSV contains one kind of data that is being tracked by the dealerships on the Carnival platform.
 
-## Data Sheets
-
-At the bottom of the spreadsheet, you will see 8 tabs. 
-
-![eight tabs of data for the sheet](./images/carnival-sheet-tabs.png)
-
 As we progress through this first book, we want to build a relational database for Carnival. And the first step in that process will be to design the database. To start discussing the design of our database, there are some key terms that we will be using:  
 
 ## The structure of a Relational Database
