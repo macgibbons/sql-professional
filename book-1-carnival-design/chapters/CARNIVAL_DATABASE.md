@@ -8,14 +8,14 @@ Carnival's intern Monique had extra time to really get familiar with database no
 
  - Using CREATE to add new tables
  - Using ALTER to change the structure of a table and its data.
- - Adding missing foreign keys and creating foreign key contraints
+ - Adding foreign key contraints
  - Identifying the order of operations for each query
  - Running a data migration to alter data values
  
 
 ## Getting Started   
 
-At this point you should have the Carnival database with tables and data already imported. If not please refer to the *Importing Data* chapter. With your teammates, use pgAdmin to execute a series of improvements on the database that Monique made. Using the new ERD identify the improvements she made by comparing the original script we used to create the database [here](./database/carnival_db_schema.sql) Be prepared to discuss your improvements as a team and why you made them. 
+At this point you should have the Carnival database with tables and data already imported into pgAdmin. If not please refer to the *Importing Data* chapter. With your teammates, use pgAdmin to execute a series of improvements on the database that Monique made in her new ERD. Use the ERD to identify the chnages she made by comparing the original script we used to create the database [here](./database/carnival_db_schema.sql). Be prepared to discuss your improvements as a team and why you made them. 
 
 
 ## Practice: Adding new tables for Carnival
