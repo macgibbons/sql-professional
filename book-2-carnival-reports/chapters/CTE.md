@@ -18,6 +18,10 @@ A Common Table Expression (CTE) is a temporary result set that you can reference
 - It is made up of using a WITH Statement and then a subsequent SQL statement.
 - They can be used recursively (WITH RECURSIVE).
 
+<img src="./images/cte_syntax.png" width="600">
+
+<br>
+<br>
 
 Basic Syntax WITH query is as follows where *name_for_summary_data* is the name given to the WITH clause result set.
 ```sql
@@ -41,3 +45,4 @@ WITH school_teachers AS
 SELECT * FROM school_teachers WHERE class_subject = 'english';
 
 ```
+
