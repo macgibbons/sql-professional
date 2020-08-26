@@ -42,7 +42,7 @@ What is a wide-column store good for? [Read more](https://www.forbes.com/sites/m
 ##
 ### Graph Type
 
-Graph databases store data in a relationship map. It's built for storing billions of relationships, much like a network. It's structure allows for querying that is more similiar to the way people think. Commonly used for social networking, recommendation engines, life sciences, Knowledge graphs, network/IT operations and fraud detections. Some Graph database engines are [ArangoDB](https://www.arangodb.com/arangodb-training-center/graphs/), [Neo4j](https://neo4j.com/developer/get-started/) and [Dgraph](https://dgraph.io/docs/).  What is a graph database good for? [Read more](https://neo4j.com/why-graph-databases/)
+Graph databases store data in a relationship map. It's built for storing billions of relationships, much like a network. It's structure allows for querying that is more similiar to the way people think. Commonly used for social networking, recommendation engines, life sciences, knowledge graphs, network/IT operations and fraud detections. Some graph database engines are [ArangoDB](https://www.arangodb.com/arangodb-training-center/graphs/), [Neo4j](https://neo4j.com/developer/get-started/) and [Dgraph](https://dgraph.io/docs/).  What is a graph database good for? [Read more](https://neo4j.com/why-graph-databases/)
 <br><br>
 
 <img src="./images/graph.png" width="480">
@@ -53,7 +53,7 @@ Graph databases store data in a relationship map. It's built for storing billion
 
 Relational databases are the time-tested standard for storing data. You'll most likely be more familiar with the table, column, and row structure that reflect relational databases (Reminicent to Excel in some ways). Relational databases are built with a predefined schema before you can add the data to the database. For example, you define a customer table with columns for first name, last name and email, once this is complete then you can think about interacting with the database data.
 
-To be able to communicate with a realtional database a working knowledge of SQL (Structured Query Language) is required. SQL is a programming language which is used by humans and machines for interacting with databases and will be the focus of this course.
+To be able to communicate with a relational database a working knowledge of SQL (Structured Query Language) is required. SQL is a programming language which is used by humans and machines for interacting with databases and will be the focus of this course.
 
 #### Below is a SQL statement that allows us to retrieve all the orders by a specific customer.
 ```
