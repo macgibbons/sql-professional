@@ -130,30 +130,3 @@ Sometimes we will need to change the structure of an already existing table. We 
 ```
 
 
-## Practice: Adding new tables for Carnival
-
-Use the Carnival ERD to identify the tables that are still missing in your database.
-
-1. Which tables need to be created after reviewing the ERD?
-2. What levels of normalization will these new tables be supporting?
-3. Do any of these tables have a foreign key in another table? What is the child table that would hold the foreign key(s).
-
-
-## Practice: Running a data migration
-
-What is a data migration? It is simply moving/changing your data from one location to another.
-
-A data migration will need to take place for Carnival where we will convert text to integers. Since that is not a learning requirment at this point we are providing the SQL script for you to conduct this.
-
-The result of the script will change all the text words to id numbers. The very important thing to note is that the datatype of these fields are still a varchar and not an integer yet! You will be respnonsible for changing the datatype in the next practice below.
-
-<a href="./databases/vehicle_type_data_migration.sql">Review data migration SQL here </a>
-
-## Practice: Altering a Table
-With the addition of our new tables Carnival is changing the way their data relates between tables, what needs to be done to the child table still?
-
-1. What kind of changes need to take place to the child table and the data? 
-2. What potential problems arise in the child table now that we need to add the foreign keys?
-3. Write and run the SQL statement(s) that are required to make these structural changes.
-
-
