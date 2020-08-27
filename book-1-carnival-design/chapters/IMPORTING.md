@@ -25,7 +25,7 @@ Before Carnival can import their CSV data to the database they need to FIRST cre
 
 Instead of hiring a SQL expert, Carnival decided to save money and assign their super smart intern, Monique to the task of creating a database as well as preparing the SQL statements required to set up the Carnival database table schemas. Monique chose to save her SQL statements in a .sql file which she plans to import and run. Then, and only then can Monique do another import of the data from the Carnival .csv files.
 
-[Download Monique's .sql file here](./database/carnival_db_schema.sql), we will use it to create the carnival database table schemas. We'll see how she did!
+[Download Monique's .sql file here](./database/carnival_db_schemas.sql), we will use it to create the carnival database table schemas. We'll see how she did!
 
 <br>
 
