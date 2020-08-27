@@ -51,7 +51,7 @@ In database design you may hear about *maxiumum cardinality*. It refers to how r
 <br>
 <br>
 
-It is possible to be more specific with your cardinalities. This is done using minimum cardinalities. *minimum cardinality* define the lowest possible relationship required for a relationship. For instance, it maybe required that ONE Student get assigned to 0 OR ONE Computer. The symbols you see below help describe the various relationship cardinalities. Minimum cardinality symbols sit on the inside of maximum cardinalities. Now see how the One-to-One relationship would now with a minimum included.
+It is possible to be more specific with your cardinalities, this is done using minimum cardinalities. *Minimum cardinality* defines the lowest possible relationship required for a relationship. For instance, it maybe required that ONE Student get assigned to 0 OR ONE computer. The symbols you see below help describe the various relationship cardinalities. Minimum cardinality symbols sit on the inside of maximum cardinalities. Now see how the one-to-one relationship would now look with a minimum included.
 
 <img src="./images/one-to-one_with_zero.png" width="600">
 
@@ -80,7 +80,7 @@ Use Lucid Chart to create an ERD that represents the entities of **Doctor** and 
 Use Lucid Chart to create an ERD that represents the entities of **CoffeeShop**, **CoffeeSupplier**, and **CoffeeDrinker**.
 
 1. What would be good attributes, or fields, or each entity?
-1. What is the relationship between the two entities?
+1. What is the relationship between the three entities?
 1. What should be the primary key on each entity?
 1. Which should hold the primary key of the other as a foreign key?
 
