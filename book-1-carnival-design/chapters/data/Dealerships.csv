@@ -1,4 +1,4 @@
-dealership_id,dealership_name,phone,city,state,website,tax_id
+dealership_id,business_name,phone,city,state,website,tax_id
 1,Gell Autos of Virginia,804-826-4657,Richmond,Virginia,http://www.gellautosofvirginia.com,bv-832-2h-se8w
 2,Huguet Autos of Minnesota,612-307-1261,Minneapolis,Minnesota,http://www.huguetautosofminnesota.com,ub-594-qc-2hlp
 3,Rutherforth Autos of New York,718-544-3706,Bronx,New York,http://www.rutherforthautosofnewyork.com,oz-423-9y-suhz
