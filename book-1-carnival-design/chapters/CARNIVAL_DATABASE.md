@@ -26,6 +26,12 @@ Use the Carnival ERD to identify the tables that are still missing in your datab
 2. What levels of normalization will these new tables be supporting?
 3. Do any of these tables have a foreign key in another table? What is the child table that would hold the foreign key(s).
 
+CSV Files for Vehicle Data:
+<br>
+- [VehicleBodyTypes](./data/VehicleBodyType.csv)
+- [VehicleMakes](./data/VehicleMake.csv)
+- [VehicleModels](./data/VehicleModel.csv)
+
 
 ## Practice: Running a data migration
 
