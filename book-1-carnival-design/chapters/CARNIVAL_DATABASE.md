@@ -15,7 +15,7 @@ Carnival's intern Monique had extra time to really get familiar with database no
 
 ## Getting Started   
 
-At this point you should have the Carnival database with tables and data already imported into pgAdmin. If not please refer to the *Importing Data* chapter. With your teammates, use pgAdmin to execute a series of improvements on the database that Monique made in her new ERD. Use the ERD to identify the chnages she made by comparing the original script we used to create the database [here](./database/carnival_db_schema.sql). Be prepared to discuss your improvements as a team and why you made them. 
+At this point you should have the Carnival database with tables and data already imported into pgAdmin. If not please refer to the *Importing Data* chapter. With your teammates, use pgAdmin to execute a series of improvements on the database that Monique made in her new ERD. Use the ERD to identify the chnages she made by comparing the original script we used to create the database [here](./database/carnival_db_schemas.sql). Be prepared to discuss your improvements as a team and why you made them. 
 
 
 ## Practice: Adding new tables for Carnival
