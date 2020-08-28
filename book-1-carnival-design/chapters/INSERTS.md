@@ -53,7 +53,7 @@ VALUES
 ## Practice: Carnival
 
 1.  Pick two of your friends or family and write a single INSERT statement to add both of them to the Customers table.
-1. Think of your dream car. In order to add this car to the Vehicles table, you might need to add data to the VehicleTypes, BodyTypes, Makes and/or Models tables. Make sure the statements are ordered so that you can execute all your INSERT statements together.
+1. Think of your dream car. In order to add this car to the Vehicles table, you might need to add data to the VehicleTypes table. Make sure the statements are ordered so that you can execute all your INSERT statements together.
 1. Use INSERT statements to add a new employee with the following info. This employee works shifts at the first three dealerships listed in your Dealerships table:
 
     - Name: Kennie Maharg
