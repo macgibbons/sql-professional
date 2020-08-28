@@ -35,7 +35,7 @@ A data migration will need to take place for Carnival where we will convert text
 
 The result of the script will change all the text words to id integers. The important thing to note is that the data migration script does not change the datatype of these fields. You will be respnonsible for changing the datatype in the next practice below.
 
-<a href="./databases/vehicle_type_data_migration.sql">Review data migration SQL here </a>
+<a href="./database/vehicle_type_data_migration.sql">Review data migration SQL here </a>
 
 ## Practice: Altering a Table
 With the addition of our new tables, Carnival is changing the way their data relates between tables, what needs to be done to the child table still?
