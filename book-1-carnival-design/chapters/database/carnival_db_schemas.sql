@@ -1,7 +1,6 @@
 create table Dealerships (
   dealership_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   business_name VARCHAR(50),
-  email VARCHAR(50),
   phone VARCHAR(50),
   city VARCHAR(50),
   state VARCHAR(50),
