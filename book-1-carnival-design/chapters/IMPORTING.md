@@ -12,7 +12,7 @@ This chapter will prepare you in the initial steps of creating a new database, s
 
 ## Goals
 
-After this chapter, doing the exercises, and discussing with your instructor, you should understand the following concepts.
+After reading this chapter, doing the exercises, and engaging in discussion with your instructor and peers, you should be able to execute the following skills in pgAdmin.
 
 1. Creating a new database
 2. How to import SQL statements via a .sql file
@@ -21,9 +21,9 @@ After this chapter, doing the exercises, and discussing with your instructor, yo
 <br>
 
 ## Carnival's Next Steps
-Before Carnival can import their CSV data to the database they need to FIRST create a database and THEN define the tables schemas using SQL.
+Before Carnival can import their CSV data to the database they need to FIRST create a database and THEN define the tables' schemas using SQL.
 
-Instead of hiring a SQL expert, Carnival decided to save money and assign their super smart intern, Monique to the task of creating a database as well as preparing the SQL statements required to set up the Carnival database table schemas. Monique chose to save her SQL statements in a .sql file which she plans to import and run. Then, and only then can Monique do another import of the data from the Carnival .csv files.
+Instead of hiring a SQL expert, Carnival decided to save money and assign a task to their super smart intern, Monique. Monique's task is to create a database and prepare the SQL statements required to set up the Carnival database table schemas. Monique chose to save her SQL statements in a .sql file which she plans to import and run. Then, and only then, can Monique do another import of the data from the Carnival .csv files.
 
 [Download Monique's .sql file here](./database/carnival_db_schemas.sql), we will use it to create the carnival database table schemas. We'll see how she did!
 
@@ -42,7 +42,7 @@ For this course you will use pgAdmin for all of your database interactions. pgAd
 <br>
 <br>
 
-2. Your next step is to open the > *Servers* directory to see contained directory structure. Note that the *Schemas* directory will hold your new tables schemas once we create them.
+2. Your next step is to open the > *Servers* directory to see contained directory structure. Note that the *Schemas* directory will hold your new tables' schemas once we create them.
 
 <img src="./images/open_servers.png" width="500">
 
@@ -79,7 +79,7 @@ PgAdmin has a feature called *Query Tool* <img src="./images/query_icon.png">, w
 At this point you should see all of Monique's SQL statments loaded into the Query Editor window. Once you see the SQL statements you can execute the SQL by pushing the *Execute/Refresh* icon <img src="./images/run_sql.png"> .
 
 
-All of the tables schema information lives inthe Schemas directory.
+All of the tables schema information lives in the Schemas directory.
 
 <img src="./images/query_editor.png" width="500">
 
@@ -87,9 +87,9 @@ All of the tables schema information lives inthe Schemas directory.
 
 ## Importing data via .csv files
 
-Now that the database and tables are Monique is ready to import the actual data from Carnival's .csv files.
+Now that the database and tables are ready, Monique can import the actual data from Carnival's .csv files.
 
-Within the Schemas directory you will see a listing of the tables in the database. Right click on the Customers table and click Import/Export.
+Within the Schemas directory you will see a listing of the tables in the database. Right click on the Customers table and select Import/Export.
 
 <img src="./images/import_export.png" width="500">
 
