@@ -30,9 +30,3 @@ You will be using the following SQL keywords/functions.
 ## Total Income by Employee
 
 1. Write a query that shows the total income (purchase and lease) per employee.
-
-## Best Sellers
-
-1. Who are the top 5 employees for generating sales income?
-1. Who are the top 5 dealership for generating sales income?
-1. Which vehicle model generated the most sales income?
