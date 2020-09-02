@@ -15,8 +15,7 @@ Carnival now offers dealerships around the country to use our platform to record
 | 7 | [Triggers Intro](./chapters/TRIGGERS.md) |
 | 8 | [Updating Used Inventory on Returns](./chapters/INVENTORY_TRIGGER.md) |
 | 9 | [Transactions](./chapters/TRANSACTIONS.md) |
-| 10 | [Transactional Stored Procedures](./chapters/TRANSACTION_STORED_PROCEFURE.md) |
+| 10 | [Transactional Stored Procedures](./chapters/TRANSACTION_STORED_PROCEDURE.md) |
 | 11 | [Carnival Sales Transaction](./chapters/SALES_TRANSACTIONS.md) |
 | 12 | [Carnival Returns Transaction](./chapters/RETURN_TRANSACTIONS.md) |
-| 👨‍👨‍👦‍👦 | **_Team Project: Carnival Purchase Queue_** |
-
+| 👨‍👨‍👦‍👦 | [**_Team Project: Carnival Accounting & Employee History_**](./chapters/CARNIVAL_ACCOUNTING_EMP_HISTORY.md)  |
