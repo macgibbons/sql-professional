@@ -60,7 +60,7 @@ ROLLBACK;
 ```
 ## Savepoint
 
-A savepoint allows you to define a special mark within the transaction. You can then use the savepoint to do a partial rollback. 
+A savepoint allows you to define a special mark within the transaction. You can then use the savepoint to do a partial rollback. You would can undo the changes up to a savepoint. 
 
 ```sql
 -- start a transaction
@@ -83,10 +83,10 @@ ROLLBACK TO SAVEPOINT foo;
 
 ## Naming your Transactions 
 
-Now let's look at an example of a named transaction where we use try/catch. Just like the try/catch we have seen application development, we want to try a block of operations. If any of them fail, then we want to handle the failure. Which is exactly what a transaction allows us to do!
+Now let's look at an example of a named transaction where we use try/catch. Just like the try/catch we have seen in application development, we want to try a block of operations. If any of them fail, then we want to handle the failure. Which is exactly what a transaction allows us to do!
 
 ```sql
-BEGIN TRANSACTION [CommitToStock]
+BEGIN TRANSACTION [AddToStock]
 
   BEGIN TRY
       DECLARE @EntryTS datetime;
@@ -104,13 +104,13 @@ BEGIN TRANSACTION [CommitToStock]
       WHERE Inventory.[Status] = 'PENDING_INSPECTION'
       AND @UpdateTS > Inventory.[LifetimeStart];
 
-      COMMIT TRANSACTION [CommitToStock]
+      COMMIT TRANSACTION [AddToStock]
 
   END TRY
 
   BEGIN CATCH
 
-      ROLLBACK TRANSACTION [CommitToStock]
+      ROLLBACK TRANSACTION [AddToStock]
 
   END CATCH
 ```
