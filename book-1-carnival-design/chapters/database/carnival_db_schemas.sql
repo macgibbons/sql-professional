@@ -32,11 +32,9 @@ create table Employees (
   last_name VARCHAR(50),
   email_address VARCHAR(50),
   phone VARCHAR(50),
-  dealership_id INT,
   employee_type_id INT,
-  FOREIGN KEY (employee_type_id) REFERENCES EmployeeTypes (employee_type_id),
-  FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
-);
+  FOREIGN KEY (employee_type_id) REFERENCES EmployeeTypes (employee_type_id)
+  );
 
 create table DealershipEmployees (
   dealership_employee_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,

@@ -11,11 +11,9 @@ This chapter covers writing `UPDATE` statements for modifying data.
 
 <br>
 
-The `UPDATE` statement is used to edit existing records in a table. First you will need to provide the table name, the column names and values you wish to update.
+The `UPDATE` statement is used to edit existing records in a table. First you will need to provide the table name, then use the `SET` clause to assign the values to the columns you wish to update.
 
-You will likley need to add a WHERE clause to your statement to specify which records to update. If WHERE is not included then the UPDATE will apply to all records in the table.
-
-Let's add a new sales type and add a new record for a sale that is of the newly added sales type.
+You will likely need to add a `WHERE` clause to your statement to specify which records to update. If `WHERE` is not included then the `UPDATE` will apply to all records in the table.
 
 Example UPDATE statement:
 ```sql
@@ -24,12 +22,19 @@ SET column1 = value1, column2 = value2...., columnN = valueN
 WHERE [condition];
 ```
 
-```sql
--- INSERT statement to add a new sale:
-UPDATE  public.sales(sales_type_id, vehicle_id, employee_id, dealership_id, price, invoice_number)
-VALUES (3, 21, 12, 7, 55999, 123477289);
+Let's see an example of updating an email address for a customer.
 
--- INSERT statement to add a new sales type:
-INSERT INTO public.salestypes(name)
-VALUES ('Rent');
+```sql
+-- UPDATE statement to change an customer
+UPDATE  public.customer
+SET email = 'juliasmith@gmail.com'
+WHERE customer_id = 67;
 ```
+
+## Practice: Employees
+
+*Rheta Raymen* an employee of Carnival has asked to be transferred to a different dealership location. She is currently at dealership *751*. She would like to work at dealership *20*. Update her record to reflect her transfer.
+
+## Practice: Sales
+
+A Sales associate needs to update a sales record because her customer want so pay wish Mastercard instead of American Express. Update Customer, *Layla Igglesden* Sales record which has an invoice number of *2781047589*.
