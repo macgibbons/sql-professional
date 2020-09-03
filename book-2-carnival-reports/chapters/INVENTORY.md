@@ -4,8 +4,8 @@ In this chapter, you will be writing queries to produce reports about the invent
 
 ## Available Models
 
-1. Across all dealerships, which model of vehicle has the lowest current inventory? This will help dealerships know which  models the purchase from manufacturers.
-1. Across all dealerships, which model of vehicle has the highest current inventory? This will help dealerships know which models are, perhaps, not selling.
+1. Which model of vehicle has the lowest current inventory? This will help dealerships know which  models the purchase from manufacturers.
+1. Which model of vehicle has the highest current inventory? This will help dealerships know which models are, perhaps, not selling.
 
 ## Diverse Dealerships
 
