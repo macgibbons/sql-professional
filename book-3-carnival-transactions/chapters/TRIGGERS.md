@@ -1,11 +1,5 @@
 # Triggers Introduction
 
-Introduce the why and how of triggers to respond to events in the database.
-
-A quick example of updating the the value of a car after it's been leased or sold?
-
-Maybe a trigger that prevents a car from being added to a dealership if their inventory is currently maxed out?
-
 A trigger is a user-defined function that is executed when a specific action occurs. Once the trigger has been defined, it is put into action automatically when the appropriate event takes place. 
 
 ## Resources to Browse Before Class
