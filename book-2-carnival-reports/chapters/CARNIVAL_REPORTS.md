@@ -23,9 +23,9 @@ Carnival would like to harness the full power of reporting. Let's begin to look 
 ## Vehicle Reports
 
 ### Inventory
-1. For each Vehicle, show the count of each Model that is in stock.
-2. For each Vehicle, show the count of each Make that is in stock.
-2. For each Vehicle, show the count of each BodyType that is in stock.
+1. In our Vehicle inventory, show the count of each Model that is in stock.
+2. In our Vehicle inventory, show the count of each Make that is in stock.
+2. In our Vehicle inventory, show the count of each BodyType that is in stock.
 
 ### Purchasing Power
 
