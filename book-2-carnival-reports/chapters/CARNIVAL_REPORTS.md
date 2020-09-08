@@ -31,7 +31,6 @@ Carnival would like to harness the full power of reporting. Let's begin to look 
 
 1. Which US state's customers have the highest average purchase price for a vehicle?
 2. Of the 5 US states with the most customers that you determined above, which of those have the customers with the highest average purchase price for a vehicle?
-3. Of the 5 dealerships with the most customers that you determined above, which of those have the customers with the highest average purchase price for a vehicle?
 
 
 
