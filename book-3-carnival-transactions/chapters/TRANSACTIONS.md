@@ -86,36 +86,82 @@ ROLLBACK TO SAVEPOINT foo;
 Now let's look at an example of a named transaction where we use try/catch. Just like the try/catch we have seen in application development, we want to try a block of operations. If any of them fail, then we want to handle the failure. Which is exactly what a transaction allows us to do!
 
 ```sql
-BEGIN TRANSACTION [AddToStock]
+BEGIN TRANSACTION [AddSale]
 
   BEGIN TRY
-      DECLARE @EntryTS datetime;
-      SET @EntryTS = CURRENT_TIMESTAMP
+    DECLARE @NewCustomerId customer.customer_id % type;
 
-      INSERT INTO Inventory ([Make], [Model], [Year], [Status], [LifetimeStart])
-      VALUES ('Ford', 'F-150', 2017, 'PENDING_INSPECTION', @EntryTS),
-             ('Subaru', 'Forester', 2019, 'PENDING_INSPECTION', @EntryTS);
+    INSERT INTO
+      customers(
+        first_name,
+        last_name,
+        email,
+        phone,
+        street,
+        city,
+        state,
+        zipcode,
+        company_name
+      )
+    VALUES
+      (
+        'Roy',
+        'Simlet',
+        'r.simlet@remves.com',
+        '615-876-1237',
+        '77 Miner Lane',
+        'San Jose',
+        'CA',
+        '95008',
+        'Remves'
+      ) RETURNING customer_id INTO @test_thing;
 
-      DECLARE @UpdateTS datetime;
-      SET @UpdateTS = CURRENT_TIMESTAMP
+    DECLARE @CurrentTS datetime;
 
-      UPDATE Inventory
-      SET [Status] = 'IN_STOCK'
-      WHERE Inventory.[Status] = 'PENDING_INSPECTION'
-      AND @UpdateTS > Inventory.[LifetimeStart];
+    SET
+      @CurrentTS = CURRENT_TIMESTAMP;
 
-      COMMIT TRANSACTION [AddToStock]
+    INSERT INTO
+      sales(
+        sales_type_id,
+        vehicle_id,
+        employee_id,
+        customer_id,
+        dealership_id,
+        price,
+        deposit,
+        purchase_date,
+        pickup_date,
+        invoice_number,
+        payment_method
+      )
+    VALUES
+      (
+        1,
+        1,
+        1,
+        @NewCustomerId,
+        1,
+        24333.67,
+        6500,
+        @CurrentTS,
+        @CurrentTS + interval '7 days',
+        1273592747,
+        solo
+      );
+
+    COMMIT TRANSACTION [AddSale]
 
   END TRY
 
   BEGIN CATCH
 
-      ROLLBACK TRANSACTION [AddToStock]
+      ROLLBACK TRANSACTION [AddSale]
 
   END CATCH
 ```
 
 ## Practice: Carnival
 
-1. Write a transaction that is responsible for adding an employee and assigning them to a dealership.
+1. Write a transaction that is responsible for adding an employee and assigning them to any three dealerships.
 1. Write a transaction to remove an employee from the database. The transaction must include operations to remove the relationship between the employee and any dealerships that may exist.
