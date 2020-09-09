@@ -1,16 +1,8 @@
 # Carnival Sales Reps
 
-## Recent Hires
+## Employee Reports
 
-1. Which employees were hired this month?
-1. Which employees were hired this year?
-
-## Veterans
-
-1. Which employee has been working the longest at each dealership?
-1. What are the 10 most veteran employees across all dealerships in the Carnival platform?
-
-## Top Performance
-
-1. Which employees generate the most income per dealership?
-
+1. How many emloyees are there for each role?
+1. How many finance managers work at each dealership?
+1. Get the names of the top 3 employees who work shifts at the most dealerships?
+1. Get a report on the top two employees who has made the most sales through leasing vehicles.
