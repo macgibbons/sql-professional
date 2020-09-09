@@ -51,7 +51,3 @@ begin
     commit;
 end;$$
 ```
-
-## Practice: Carnival
-
-1. 
