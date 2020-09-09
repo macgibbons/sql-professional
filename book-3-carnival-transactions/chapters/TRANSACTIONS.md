@@ -81,84 +81,81 @@ VALUES('Accountant');
 ROLLBACK TO SAVEPOINT foo;
 ```
 
-## Naming your Transactions 
+## Transactions & Exception Handling
 
-Now let's look at an example of a named transaction where we use try/catch. Just like the try/catch we have seen in application development, we want to try a block of operations. If any of them fail, then we want to handle the failure. Which is exactly what a transaction allows us to do!
+Now let's look at an example of a transaction where we use exception handling. Just like exception handling we have seen in application development, we want to try a block of operations. If any of them fail, then we want to handle the failure. In the case of a transaction, we are rolling back any changes the transaction may have made.
 
 ```sql
-BEGIN TRANSACTION [AddSale]
+do $$ 
+DECLARE 
+  NewCustomerId integer;
+  CurrentTS date;
 
-  BEGIN TRY
-    DECLARE @NewCustomerId customer.customer_id % type;
+BEGIN
 
-    INSERT INTO
-      customers(
-        first_name,
-        last_name,
-        email,
-        phone,
-        street,
-        city,
-        state,
-        zipcode,
-        company_name
-      )
-    VALUES
-      (
-        'Roy',
-        'Simlet',
-        'r.simlet@remves.com',
-        '615-876-1237',
-        '77 Miner Lane',
-        'San Jose',
-        'CA',
-        '95008',
-        'Remves'
-      ) RETURNING customer_id INTO @test_thing;
+  INSERT INTO
+    customers(
+      first_name,
+      last_name,
+      email,
+      phone,
+      street,
+      city,
+      state,
+      zipcode,
+      company_name
+    )
+  VALUES
+    (
+      'Roy',
+      'Simlet',
+      'r.simlet@remves.com',
+      '615-876-1237',
+      '77 Miner Lane',
+      'San Jose',
+      'CA',
+      '95008',
+      'Remves'
+    ) RETURNING customer_id INTO NewCustomerId;
 
-    DECLARE @CurrentTS datetime;
+  CurrentTS = CURRENT_DATE;
 
-    SET
-      @CurrentTS = CURRENT_TIMESTAMP;
+  INSERT INTO
+    sales(
+      sales_type_id,
+      vehicle_id,
+      employee_id,
+      customer_id,
+      dealership_id,
+      price,
+      deposit,
+      purchase_date,
+      pickup_date,
+      invoice_number,
+      payment_method
+    )
+  VALUES
+    (
+      1,
+      1,
+      1,
+      NewCustomerId,
+      1,
+      24333.67,
+      6500,
+      CurrentTS,
+      CurrentTS + interval '7 days',
+      1273592747,
+      'solo'
+    );
 
-    INSERT INTO
-      sales(
-        sales_type_id,
-        vehicle_id,
-        employee_id,
-        customer_id,
-        dealership_id,
-        price,
-        deposit,
-        purchase_date,
-        pickup_date,
-        invoice_number,
-        payment_method
-      )
-    VALUES
-      (
-        1,
-        1,
-        1,
-        @NewCustomerId,
-        1,
-        24333.67,
-        6500,
-        @CurrentTS,
-        @CurrentTS + interval '7 days',
-        1273592747,
-        solo
-      );
+EXCEPTION WHEN others THEN 
+  -- RAISE INFO 'name:%', SQLERRM;
+  ROLLBACK;
 
-    COMMIT TRANSACTION [AddSale]
+END;
 
-  END TRY
-
-  BEGIN CATCH
-
-      ROLLBACK TRANSACTION [AddSale]
-
-  END CATCH
+$$ language plpgsql;
 ```
 
 ## Practice: Carnival
