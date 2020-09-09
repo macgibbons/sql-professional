@@ -28,23 +28,25 @@ Examples of where transactional stored procedures would be used:
 ### Examples of Transactional Stored Procedures 
 
 ```sql
-create or replace procedure transfer(
-   sender int,
-   receiver int, 
-   amount dec
+create or replace procedure student_add_score(
+   student_id int,
+   score dec
 )
 language plpgsql    
 as $$
 begin
-    -- subtracting the amount from the sender's account 
-    update accounts 
-    set balance = balance - amount 
-    where id = sender;
+    -- Adding a new record into the grades table 
+    insert into studentgrades(student_id, score) 
+    values (student_id, score)
 
-    -- adding the amount to the receiver's account
-    update accounts 
-    set balance = balance + amount 
-    where id = receiver;
+    -- Calculating and updating the students new average score
+    update students 
+    set avg_grade = (
+        select avg(score) 
+        from studentgrades
+        where student_id = student_id
+    ) 
+    where student_id = student_id;
 
     commit;
 end;$$
@@ -52,5 +54,4 @@ end;$$
 
 ## Practice: Carnival
 
-1. 
 1. 
