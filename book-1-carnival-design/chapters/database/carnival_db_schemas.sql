@@ -45,12 +45,10 @@ create table DealershipEmployees (
 );
 
 
-
 create table SalesTypes (
   sales_type_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   name VARCHAR(8)
 );
-
 
 
 create table VehicleTypes (
@@ -71,7 +69,11 @@ create table Vehicles (
   msr_price INT,
   miles_count INT,
   year_of_car INT,
+  is_sold boolean,
+  is_new boolean,
+  dealership_location_id int,
   FOREIGN KEY (vehicle_type_id) REFERENCES VehicleTypes (vehicle_type_id)
+  FOREIGN KEY (dealership_location_id) REFERENCES Dealerships (dealership_id)
 );
 
 create table Sales (
@@ -87,6 +89,7 @@ create table Sales (
   pickup_date DATE,
   invoice_number VARCHAR(50),
   payment_method VARCHAR(50),
+  sale_returned boolean,
   FOREIGN KEY (sales_type_id) REFERENCES SalesTypes (sales_type_id),
   FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
   FOREIGN KEY (employee_id) REFERENCES Employees (employee_id),
@@ -94,3 +97,23 @@ create table Sales (
   FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
 );
 
+create table OilChangeLogs (
+  oil_change_log_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  date_occured TYPE timestamp with time zone,
+  vehicle_id int,
+  FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
+);
+
+create table CarRepairTypeLogs (
+  car_repair_type_log_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  date_occured TYPE timestamp with time zone,
+  vehicle_id int,
+  repair_type_id INT,
+  FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
+  FOREIGN KEY (repair_type_id) REFERENCES RepairTypes (repair_type_id),
+);
+
+create table RepairTypes (
+  repair_type_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
+  name VARCHAR(50)
+);

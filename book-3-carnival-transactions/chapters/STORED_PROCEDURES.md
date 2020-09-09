@@ -20,16 +20,24 @@ After reading this chapter, doing the exercises, and engaging in discussion with
 ## What are Stored Procedures?
 Stored procedures are predefined procedural statements for executing SQL. They are stored on the database server and  executed at will.
 
-Though similair to SQL's User Defined Functions (UDF), procedures do not return a value. Stored Procedures (SP) can still use `RETURN` however they are only used to halt a procedure. The big difference between SP and UDF's is UDP's can be used just like an expression in regular SQL statements whereas stored procedures must be invoked by using the `CALL` statement. 
+Though similair to SQL's User Defined Functions (UDF), stored procedures (SP) do not use the return statment to return a value. The `RETURN` can be used however to halt a procedure. 
+
+It is a common practice to use stored procedures for all procedures except SELECT. It is better to use SELECT statments with User Defined Function since these function have a return statement.
+
+The big difference between SP and UDF's is UDF's can be used just like an expression in regular SQL statements whereas stored procedures must be invoked by using the `CALL` statement. 
 
 
 ## Creating/Executing a Stored Procredure
 
-Defining a procedure requires a name, parameters, and embedded sql statements. It also specifies the procedural language to be used, and has $$ at the beginning and end of the contain SQL. Parameters can have `IN`, `INOUT` modes as well. The `IN` parameter is what gets sent to the SP from our code whereas the `INOUT` paremeter is what our code sends back to our program.
+Defining a procedure requires a name, parameters, and embedded sql statements. It also specifies the procedural language to be used, and has $$ at the beginning and end of the contain SQL. 
+
+Despite not being able to use the RETURN statement to return data there is a way to return data if needed through the parameter definitions. 
+
+Parameters can have `IN`, `INOUT` modes as well. The `IN` parameter is what gets sent to the SP from our code whereas the `INOUT` paremeter is what our code sends back to our program.
 
 ```sql
-CREATE PROCEDURE insert_data(a varchar, b varchar)
-LANGUAGE SQL
+CREATE PROCEDURE insert_data(IN a varchar, INOUT b varchar)
+LANGUAGE plpgsql
 AS $$
 BEGIN
 
