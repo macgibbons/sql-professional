@@ -104,7 +104,7 @@ create table OilChangeLogs (
   FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
 );
 
-create table CarRepairTypeLog (
+create table CarRepairTypeLogs (
   car_repair_type_log_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   date_occured TYPE timestamp with time zone,
   vehicle_id int,
