@@ -34,7 +34,7 @@ create table Employees (
   phone VARCHAR(50),
   employee_type_id INT,
   FOREIGN KEY (employee_type_id) REFERENCES EmployeeTypes (employee_type_id)
-  );
+);
 
 create table DealershipEmployees (
   dealership_employee_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -44,12 +44,10 @@ create table DealershipEmployees (
   FOREIGN KEY (dealership_id) REFERENCES Dealerships (dealership_id)
 );
 
-
 create table SalesTypes (
   sales_type_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
   name VARCHAR(8)
 );
-
 
 create table VehicleTypes (
   vehicle_type_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
@@ -72,8 +70,7 @@ create table Vehicles (
   is_sold boolean,
   is_new boolean,
   dealership_location_id int,
-  FOREIGN KEY (vehicle_type_id) REFERENCES VehicleTypes (vehicle_type_id)
-  FOREIGN KEY (dealership_location_id) REFERENCES Dealerships (dealership_id)
+  FOREIGN KEY (vehicle_type_id) REFERENCES VehicleTypes (vehicle_type_id) FOREIGN KEY (dealership_location_id) REFERENCES Dealerships (dealership_id)
 );
 
 create table Sales (
@@ -83,7 +80,7 @@ create table Sales (
   employee_id INT,
   customer_id INT,
   dealership_id INT,
-  price DECIMAL(8,2),
+  price DECIMAL(8, 2),
   deposit INT,
   purchase_date DATE,
   pickup_date DATE,
@@ -99,18 +96,18 @@ create table Sales (
 
 create table OilChangeLogs (
   oil_change_log_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  date_occured TYPE timestamp with time zone,
+  date_occured timestamp with time zone,
   vehicle_id int,
-  FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
+  FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id)
 );
 
 create table CarRepairTypeLogs (
   car_repair_type_log_id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-  date_occured TYPE timestamp with time zone,
+  date_occured timestamp with time zone,
   vehicle_id int,
   repair_type_id INT,
   FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
-  FOREIGN KEY (repair_type_id) REFERENCES RepairTypes (repair_type_id),
+  FOREIGN KEY (repair_type_id) REFERENCES RepairTypes (repair_type_id)
 );
 
 create table RepairTypes (
