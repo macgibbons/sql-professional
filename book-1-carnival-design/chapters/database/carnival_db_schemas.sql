@@ -70,7 +70,8 @@ create table Vehicles (
   is_sold boolean,
   is_new boolean,
   dealership_location_id int,
-  FOREIGN KEY (vehicle_type_id) REFERENCES VehicleTypes (vehicle_type_id) FOREIGN KEY (dealership_location_id) REFERENCES Dealerships (dealership_id)
+  FOREIGN KEY (vehicle_type_id) REFERENCES VehicleTypes (vehicle_type_id),
+  FOREIGN KEY (dealership_location_id) REFERENCES Dealerships (dealership_id)
 );
 
 create table Sales (
@@ -107,7 +108,7 @@ create table CarRepairTypeLogs (
   vehicle_id int,
   repair_type_id INT,
   FOREIGN KEY (vehicle_id) REFERENCES Vehicles (vehicle_id),
-  FOREIGN KEY (repair_type_id) REFERENCES RepairTypes (repair_type_id)
+  FOREIGN KEY (repair_type_id) REFERENCES RepairTypes (repair_type_id),
 );
 
 create table RepairTypes (
