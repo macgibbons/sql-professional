@@ -14,5 +14,5 @@ Carnival now offers dealerships around the country to use our platform to record
 | 6 | [Triggers for Dealerships](./chapters/DEALERSHIP_TRIGGERS.md) |
 | 7 | [Transactions](./chapters/TRANSACTIONS.md) |
 | 8 | [Carnival Vehicle Transactions](./chapters/VEHICLE_TRANSACTIONS.md) |
-| 9 | [Transactional Stored Procedures](./chapters/TRANSACTION_STORED_PROCEFURE.md) |
+| 9 | [Transactional Stored Procedures](./chapters/TRANSACTION_STORED_PROCEDURE.md) |
 | 👨‍👨‍👦‍👦 | [**_Team Project: Carnival: Accounting & HR_**](./chapters/CARNIVAL_ACCOUNTING_EMPLOYEES.md) |
